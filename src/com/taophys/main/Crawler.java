@@ -1,12 +1,17 @@
 package com.taophys.main;
 
+import java.util.Iterator;
+
+import com.taophys.main.Node;
+
 /**
  * This interface governs iterator style "crawlers"
  * which can be used to easily traverse the tree.
  * @author Andrew Binder
  *
  */
-public interface Crawler {
+@SuppressWarnings("rawtypes")
+public interface Crawler extends Iterator {
 	/**
 	 * Method for determining if the crawler has anywhere to go.
 	 * @return

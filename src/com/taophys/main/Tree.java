@@ -36,7 +36,7 @@ public class Tree {
 	 * @param child
 	 */
 	public void addChildByBreadth(Node child) {
-		BreadthCrawler crawler = new BreadthCrawler(this);
+		Crawler crawler = new BreadthCrawler(this);
 		Node node;
 		
 		while(crawler.hasNext()){
@@ -53,7 +53,7 @@ public class Tree {
 	 * @return
 	 */
 	public Node getNode(Node nodeToFind ) {
-		BreadthCrawler crawler = new BreadthCrawler(this);
+		Crawler crawler = new BreadthCrawler(this);
 		Node node;
 		while(crawler.hasNext()){
 			node = crawler.next();
@@ -69,7 +69,7 @@ public class Tree {
 	 * @return
 	 */
 	public Node getNodeEquals(Object data) {
-		BreadthCrawler crawler = new BreadthCrawler(this);
+		Crawler crawler = new BreadthCrawler(this);
 		Node node;
 		while(crawler.hasNext()){
 			node = crawler.next();
@@ -85,7 +85,7 @@ public class Tree {
 	 * @return
 	 */
 	public Node getNodeSame(Object data) {
-		BreadthCrawler crawler = new BreadthCrawler(this);
+		Crawler crawler = new BreadthCrawler(this);
 		Node node;
 		while(crawler.hasNext()){
 			node = crawler.next();
